@@ -30,120 +30,121 @@
         width: 80%;
     }
 }
-/*2*/
-.tm-content-box .box-bg:hover {
-    cursor: pointer;
-    background-color: #87CEFA;
+@media screen  {
+    /*2*/
+    .tm-content-box .box-bg:hover {
+        cursor: pointer;
+        background-color: #87CEFA;
+    }
+    .tm-content-box .box-bg h2:hover {
+        color: #fff;
+        font-weight: 700;
+    }
+    /*3*/
+    p:first-letter {
+        color: #87CEFA;
+        font-size: 30px;
+    }
+    /*4*/
+    .tm-sidebar, .tm-content-box, .blocks {
+        box-shadow: 0 0 8px rgba(0,0,0, 0.7);
+    }
+    .tm-banner {
+        border: 30px solid #f5f5f5;
+        padding: 0;
+    }
+    /*5*/
+    section {
+        position: relative;
+    }
+    section::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 0;
+        height: 0;
+        border-top: 40px solid #46add5;
+        border-right: 250px solid transparent;
+    }
+    /*6*/
+    .carousel .carousel-content .tm-section-title {
+        color: gainsboro;
+        letter-spacing: 5px;
+    }
+    /*7*/
+    h2 + p {
+        font-style: italic;
+    }
+    /*8*/
+    p {
+        text-indent:  1.2em;;
+        line-height: 1.5;
+    }
+    /*9*/
+    .heading .padding-medium a {
+        color: black;
+    }
+    .heading .padding-medium a:visited {
+        text-decoration: underline;
+    }
+    .heading .padding-medium a:hover {
+        color: #31b0d5;
+        text-decoration: underline double;
+    }
+    .heading .padding-medium .text::after{
+        content: "New";
+        color: red;
+        font-size: .7em;
+        vertical-align: super;
+    }
+    /* 10 */
+    .blocks .box.box-work {
+        padding: 8px;
+    }
+    .blocks .gallery-container .box:nth-child(even) {
+        background-color: #e7e7e7;
+    }
+    .blocks .boxes.gallery-container .box p {
+        color: black;
+        text-indent: initial;
+        line-height: 1.5em;
+    }
+    .blocks .boxes.gallery-container .box p::first-letter {
+        color: black;
+    }
+    /* 11 */
+    .contact-form .mandatory-field::after {
+        content: "*";
+        color: red;
+        font-weight: 700;
+    }
+    .contact-form {
+        text-align: right;
+    }
+    .contact-form .submit-btn {
+        background: #fff;
+        color: #23afd5;
+        padding: 15px 55px;
+        border: 1px solid #23afd5;
+        border-radius: 0;
+    }
+    .contact-form .submit-btn:hover {
+        color: #fff;
+        opacity: 0.5;
+        background: #23afd5;
+    }
+    /* 12 */
+    .tm-sidebar .tm-main-nav .tm-nav-item:hover {
+        background: #f5f5f5;
+    }
+    /*Fix "What We Do" section*/
+    .tm-content-box.flex-2-col:first-child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .tm-content-box.flex-2-col .flex-item img{
+        width: 100%;
+    }
 }
-.tm-content-box .box-bg h2:hover {
-    color: #fff;
-    font-weight: 700;
-}
-/*3*/
-p:first-letter {
-    color: #87CEFA;
-    font-size: 30px;
-}
-/*4*/
-.tm-sidebar, .tm-content-box, .blocks {
-    box-shadow: 0 0 8px rgba(0,0,0, 0.7);
-}
-.tm-banner {
-    border: 30px solid #f5f5f5;
-    padding: 0;
-}
-/*5*/
-section {
-    position: relative;
-}
-section::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 0;
-    border-top: 40px solid #46add5;
-    border-right: 250px solid transparent;
-}
-/*6*/
-.carousel .carousel-content .tm-section-title {
-    color: gainsboro;
-    letter-spacing: 5px;
-}
-/*7*/
-h2 + p {
-    font-style: italic;
-}
-/*8*/
-p {
-    text-indent:  1.2em;;
-    line-height: 1.5;
-}
-/*9*/
-.heading .padding-medium a {
-    color: black;
-}
-.heading .padding-medium a:visited {
-    text-decoration: underline;
-}
-.heading .padding-medium a:hover {
-    color: #31b0d5;
-    text-decoration: underline double;
-}
-.heading .padding-medium .text::after{
-    content: "New";
-    color: red;
-    font-size: .7em;
-    vertical-align: super;
-}
-/* 10 */
-.blocks .box.box-work {
-    padding: 8px;
-}
-.blocks .gallery-container .box:nth-child(even) {
-    background-color: #e7e7e7;
-}
-.blocks .boxes.gallery-container .box p {
-    color: black;
-    text-indent: initial;
-    line-height: 1.5em;
-}
-.blocks .boxes.gallery-container .box p::first-letter {
-    color: black;
-}
-/* 11 */
-.contact-form .mandatory-field::after {
-    content: "*";
-    color: red;
-    font-weight: 700;
-}
-.contact-form {
-    text-align: right;
-}
-.contact-form .submit-btn {
-    background: #fff;
-    color: #23afd5;
-    padding: 15px 55px;
-    border: 1px solid #23afd5;
-    border-radius: 0;
-}
-.contact-form .submit-btn:hover {
-    color: #fff;
-    opacity: 0.5;
-    background: #23afd5;
-}
-/* 12 */
-.tm-sidebar .tm-main-nav .tm-nav-item:hover {
-    background: #f5f5f5;
-}
-/*Fix "What We Do" section*/
-.tm-content-box.flex-2-col:first-child {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-}
-.tm-content-box.flex-2-col .flex-item img{
-    width: 100%;
-}
-
