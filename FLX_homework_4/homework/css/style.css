@@ -11,7 +11,6 @@ body{
     background-color: #F3F3F3;
 }
 .main-wrapper{
-    /*max-width: 1920px;*/
     min-width: 900px;
 }
 header{
@@ -73,32 +72,10 @@ header nav a:hover{
 /* careers */
 
 .careers{
-   /* padding-right: 50px;
-    padding-left: 50px;
-    position: relative;
-    font-size: 12px;
-    height: 220px;
-    display: flex;
-    flex-direction: column;*/
     background: #000;
     font-size: 12px;
 }
-/*
-.careers::before{
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 0;
-    height: 0;
-    border-top: 150px solid #000000;
-    border-left: 1920px solid transparent;
-}*/
 .careers .text-right p{
-    /*color: #fff;
-    align-self: flex-end;
-    z-index: 1;
-    width: 50%;*/
     position: absolute;
     top: 105%;
     right: 0%;
@@ -106,8 +83,6 @@ header nav a:hover{
     color: white;
 }
 .careers .text-left{
-    /*width: 50%;
-    align-self: flex-start;*/
     height: 300px;
     width: 100%;
     display: block;
@@ -138,20 +113,20 @@ header nav a:hover{
 .about h2 span{
     font-weight: bolder;
 }
-.about article{
+.about .our-articles{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: fit-content;
 }
-.about article .img-holder{
+.about .our-articles .img-holder{
     width: 100%;
     position: relative;
 }
-.about article .img-holder img{
+.about .our-articles .img-holder img{
     width: 100%;
 }
-.about article .img-holder .likes{
+.about .our-articles .img-holder .likes{
     position: absolute;
     padding: 10px;
     border: 2px solid #ffffff;
@@ -161,23 +136,23 @@ header nav a:hover{
     color: #ffffff;
     cursor: pointer;
 }
-.about article .img-holder .photo-date{
+.about .our-articles .img-holder .photo-date{
     font-size: 14px;
     color: #fff;
     position: absolute;
     left: 20px;
     bottom: 20px;
 }
-.about article .img-holder .photo-date span{
+.about .our-articles .img-holder .photo-date span{
     font-weight: bold;
 }
-.about article .post{
+.about .our-articles .post{
     width: 100%;
     text-align: center;
     font-size: 12px;
     margin: 0 30px;
 }
-.about article .post p:nth-child(2){
+.about .our-articles .post p:nth-child(2){
     padding-top: 75px;
     padding-bottom: 75px;
 }
