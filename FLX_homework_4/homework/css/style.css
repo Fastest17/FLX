@@ -25,7 +25,7 @@ header{
     align-items: center;
     padding: 50px;
     font-size: 12px;
-    margin-bottom: 200px;
+    margin-bottom: 10%;
 }
 .top-wrapper .logo{
     text-transform: uppercase;
@@ -57,7 +57,7 @@ header nav{
     display: flex;
     justify-content: space-around;
     align-items: center;
-    margin-top: 140px;
+    margin-top: 5%;
 }
 header nav a{
     font-size: 12px;
@@ -153,8 +153,8 @@ header nav a:hover{
     margin: 0 30px;
 }
 .about .our-articles .post p:nth-child(2){
-    padding-top: 75px;
-    padding-bottom: 75px;
+    padding-top: 5em;
+    padding-bottom: 5em;
 }
 
 /* blocks */
