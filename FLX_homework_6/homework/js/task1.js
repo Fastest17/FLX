@@ -2,10 +2,10 @@ var a = parseFloat(prompt("Enter value 'a'"));
 var b = prompt("Enter value 'b'");
 var c = prompt("Enter value 'c'");
 
-if (a && b && c !== 'NaN') {
-    calc(a, b, c);
-} else {
+if (a === 0 || isNaN(a) || isNaN(b) || isNaN(c)) {
     alert("Invalid input data");
+} else {
+    calc(a, b, c);
 }
 function calc(a, b, c) {
     var D = b * b - 4 * a * c;
@@ -21,4 +21,3 @@ function calc(a, b, c) {
         alert("no solution");
     }
 }
-
