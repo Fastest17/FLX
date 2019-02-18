@@ -1,43 +1,43 @@
 function userCard(index) {
-let key = index;
-let balance = 100;
-let transactionLimit = 100;
-let historyLogs = [];
-let date = new Date().toLocaleString('en-GB');
-const tax = 0.005;
-function historyLogsRegister (type, credits, time) {
-    historyLogs.push({
-        operationType: type,
-        credits: credits,
-        operationTime: time
-    });
-}
-return {
-    getCardOptions() {
-        return {key, balance, transactionLimit, historyLogs};
-    },
-    putCredits(credits) {
-        balance += credits;
-        historyLogsRegister('Received credits', credits, date);
-    },
-    takeCredits(credits) {
-        balance -= credits;
-        historyLogsRegister('Withdrawal of credits', credits, date);
-    },
-    setTransactionLimit(credits) {
-        transactionLimit = credits;
-        historyLogsRegister('Transaction limit change', credits, date);
-    },
-    transferCredits(credits, userCard) {
-        const transfer = tax * credits + credits;
-        if (transfer <= balance && transfer <= transactionLimit) {
-            this.takeCredits(transfer);
-            userCard.putCredits(credits);
-        } else {
-            console.error('Error, the amount entered exceeds the balance or transaction limit.');
+    let key = index;
+    let balance = 100;
+    let transactionLimit = 100;
+    let historyLogs = [];
+    let date = new Date().toLocaleString('en-GB');
+    const tax = 0.005;
+    function historyLogsRegister (type, credits, time) {
+        historyLogs.push({
+            operationType: type,
+            credits: credits,
+            operationTime: time
+        });
+    }
+    return {
+        getCardOptions() {
+            return {key, balance, transactionLimit, historyLogs};
+        },
+        putCredits(credits) {
+            balance += credits;
+            historyLogsRegister('Received credits', credits, date);
+        },
+        takeCredits(credits) {
+            balance -= credits;
+            historyLogsRegister('Withdrawal of credits', credits, date);
+        },
+        setTransactionLimit(credits) {
+            transactionLimit = credits;
+            historyLogsRegister('Transaction limit change', credits, date);
+        },
+        transferCredits(credits, userCard) {
+            const transfer = tax * credits + credits;
+            if (transfer <= balance && transfer <= transactionLimit) {
+                this.takeCredits(transfer);
+                userCard.putCredits(credits);
+            } else {
+                console.error('Error, the amount entered exceeds the balance or transaction limit.');
+            }
         }
     }
-}
 }
 class UserAccount {
     constructor(name) {
