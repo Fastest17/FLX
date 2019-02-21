@@ -1,0 +1,64 @@
+.main{
+    width: 60%;
+    margin: 50px auto 0;
+    color: #000;
+    border: 1px solid #000;
+    padding: 10px 20px;
+}
+.header {
+    text-align: center;
+}
+#message{
+    display: none;
+    color: red
+}
+button{
+    background: inherit;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.material-icons{
+    font-size: 40px;
+    cursor: pointer;
+}
+.form {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #000;
+    padding-bottom: 30px;
+}
+.form #newTask{
+    width: 90%;
+    height: 28px;
+    border: 1px solid #000;
+    font-size: 18px;
+    color: #595959;
+    padding-left: 5px;
+    margin-left: 2%;
+}
+ul{
+    list-style: none;
+    padding: 0;
+}
+ul li{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 2%;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+ul li .out{
+    display: flex;
+    align-items: center;
+}
+.footer{
+    text-align: center;
+}
+.footer img{
+    width: 10%;
+}
+
